@@ -1,5 +1,19 @@
 # Robotiq
 
+## Updates
+This repository is forked from [ros-industrial/robotiq](https://github.com/ros-industrial/robotiq). A few codes were modified to fix the import errors in `robotiq_3f_gripper_control/nodes/Robotiq3FGripperTcpNode.py`.
+
+
+Now this repository works fine with my robotiq-3f gripper and my running enviornment:
++ Ubuntu16.04
++ ROS kinetic
++ Python 2.7.12
++ gcc (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609
++ g++ (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609
+
+
+## Below are the origin README
+
 ## Status
 
 As of 2021-05-28, it would appear this repository is ***unmaintained***.
