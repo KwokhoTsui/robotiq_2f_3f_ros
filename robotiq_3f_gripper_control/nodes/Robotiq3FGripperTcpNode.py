@@ -43,12 +43,15 @@ The script takes as an argument the IP address of the gripper. It initializes a 
 
 import roslib;
 
-roslib.load_manifest('robotiq_3f_gripper_control')
-roslib.load_manifest('robotiq_modbus_tcp')
+# roslib.load_manifest('robotiq_3f_gripper_control')
+# roslib.load_manifest('robotiq_modbus_tcp')
 import rospy
+import os.path as osp
+import sys
+sys.path.append(osp.abspath("../src"))
+sys.path.append(osp.abspath("../../robotiq_modbus_tcp/src/robotiq_modbus_tcp"))
 import robotiq_3f_gripper_control.baseRobotiq3FGripper
 import robotiq_modbus_tcp.comModbusTcp
-import sys
 from robotiq_3f_gripper_articulated_msgs.msg import Robotiq3FGripperRobotInput
 from robotiq_3f_gripper_articulated_msgs.msg import Robotiq3FGripperRobotOutput
 
